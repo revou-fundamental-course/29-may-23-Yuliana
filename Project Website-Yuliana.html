@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Company File.</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header-wrapper">
+            <img class="logo" alt="ini logo-rice bowl lur logo" src="asset/WhatsApp Image 2023-06-08 at 13.11.32.jpeg"
+            style height="100px"; width="100px";border-radius:5px>
+            <div class="menu">
+                <button>Homes</button>
+                <button>My Profile</button>
+                <button>Portfolio</button>
+                <button>Message Us</button>
+            </div>
+        </header>
+
+        <script>
+            function replaceName(){
+            var name=prompt("Masukan Nama Kamu.",);
+            document.getElementById("name").innerHTML=name;
+            }
+
+            replaceName();
+        </script>
+
+        <main class="main-content">
+    <h2>Hi, <span id="name">Yuliana</span>. Welcome to Website.</h2>
+        </main>
+        
+        <div id="headquarters-section">
+            <h1 style="align-content: ;">Our Headquarters.</h1>
+            <div class="wrapper"></div>
+
+            <div class="headquarters-image-container"><div class="head"></div>
+            <p>Jakarta</p>
+            </div>
+
+            <div class="headquarters-image-container"><div class="head"></div>
+            <p>Wakanda</p>
+            </div>
+
+            <div class="headquarters-image-container"><div class="head"></div>
+            <p>Surabaya</p>
+            </div>
+
+        </div>
+
+        <div id="message-us-section" class="message-us">
+            <h1>Message Us!</H1>
+            <form
+            class="message-us"
+            name="message-us"
+            onsubmit="return validateForm()">
+               
+            Nama: <input placeholder="Nama" type="text" name="full-name" />
+            <br/>
+
+            Tanggal Lahir: <input type="date" name="birth-date" />
+            <br/>
+
+            Jenis Kelamin:
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+            <br/>
+
+            Pesan: <textarea placeholder="Pesan" name="messages"></textarea>
+
+            <br/>
+
+            <button>Submit</button>
+            </form>
+        </div>
+        <div style="align-content: right: inherit;">
+            <p>Nama: <span id="sender-full-name"></span></p>
+            <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+            <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+            <p>Pesan: <span id="sender-messages"></span></p>
+        </div>
+        <footer>Created by Yuliana.</footer>
+    </body>
+</html>
+    </body>
+</html>
